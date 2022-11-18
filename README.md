@@ -1,4 +1,4 @@
-![Med_Banner.JPEG](attachment:Med_Banner.JPEG)
+![graph1](./Images/Med_Banner.JPEG)
 
 # Stroke Diagnostic Modeling
 
@@ -48,7 +48,7 @@ This model will benefit the business if put to use because it will flag potentia
 ![graph1](./Results/BMI_Stroke.jpg)
 
 ### Visual 3
-![graph1](./images/Feature_Importances.jpg)
+![graph1](./Results/Feature_Importances.jpg)
 
 ## Conclusions
 
@@ -60,7 +60,7 @@ In the future, we would love to further explore health data and create a model t
 
 ## For More Information
 
-Please review our full analysis in [our Jupyter Notebook](./Final_Notebook.ipynb) or our [presentation](./Stroke_Diagnostic_Modeling.pdf).
+Please review our full analysis in [our Jupyter Notebook](./Final_Notebook.ipynb) or our [presentation](./Stroke_Diagnostic_Modeling_Presentation.PDF).
 
 For any additional questions, please contact **Anita Camlic & anitacamlic@gmail.com, Eddie Juarez & ejuarez.nyc@gmail.com, Dermot O'Brien & dermot.obri@gmail.com**
 
@@ -68,11 +68,11 @@ For any additional questions, please contact **Anita Camlic & anitacamlic@gmail.
 
 
 ```
-├── README.md                              <- The top-level README for reviewers of this project
-├── Final_Notebook.ipynb                   <- Narrative documentation of analysis in Jupyter notebook
-├── Stroke_Diagnostic_Modeling.pdf         <- PDF version of project presentation
-├── Data                                   <- Sourced externally 
-├── Images                                 <- Both sourced 
-└── Results                                <- Generated from code
-
+├── README.md                                    <- The top-level README for reviewers of this project
+├── Final_Notebook.ipynb                         <- Narrative documentation of analysis in Jupyter notebook
+├── Stroke_Diagnostic_Modeling_Presentation.pdf  <- PDF version of project presentation
+├── Data                                         <- Sourced externally 
+├── Images                                       <- Sourced externally 
+├── Results                                      <- Generated from code
+└── Working_Notebooks                            <- Scratch notebooks                        
 ```
