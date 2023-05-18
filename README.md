@@ -32,7 +32,6 @@ Below are the 12 features and the data contained in them.
 **Note:** "Unknown" in smoking_status means that the information is unavailable for this patient
 
 ## Methods
-
 We used binary classification algorithms to learn from our dataset and classify new observations as either at risk or not at risk of a stroke. Our best performing model was an XGBoost model with tuned hyperparameters. 
 
 ## Results
@@ -49,10 +48,10 @@ We chose recall as our important metric to measure because it is associated with
 ![graph1](./Results/Feature_Importances.jpg)
 
 ## Conclusions
-
 We recommend that Mount Sinai takes our model and incorporates it as a tool for their doctors in preliminary diagnostics for their patients. Once doctors identify patients that are at risk of stroke, they can work to build comprehensive health plans to combat and lessen the chances of a stroke. The two attributes of a person we think doctors should focus most on are the age of the patient and their bmi levels. Our models have shown that these two features contribute greatly to the prediction of stroke cases. When focusing on patients, they should look to treat those older patients first, as well as those with high bmi's, possibly working to lower their bmi's as well.
 
 To aid the comprehensiveness of our model, we hope to add more patient data and more health and history features to our model. We also would like to apply similar model techniques to health data to predict other illnesses like heart disease.
+
 
 ## For More Information
 
