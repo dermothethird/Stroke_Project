@@ -5,10 +5,10 @@
 **Authors**: Anita Camlic, Eddie Juarez, Dermot O'Brien
 
 ## Overview
-According to the World Health Organization (WHO) stroke is the 2nd leading cause of death globally, responsible for approximately 11% of total deaths.This dataset is used to predict whether a patient is likely to get stroke based on the input parameters like gender, age, various diseases, and smoking status. Each row in the data provides relavant information about the patient.
+According to the World Health Organization (WHO), strokes are the 2nd leading cause of death globally, responsible for approximately 11% of total deaths. With the use of patient health and history data, as well as advanced modeling techniques, we hope to gain a better understanding of what makes a patient more likely to have a stroke. 
 
 ## Business Problem
-Hospitals are constantly looking for new ways to detect health risks in their patients before they occur. We have been asked by Mount Sinai's Diagnostic team to create a model that can predict the likelihood of a stroke in their patients with the use of patient data. The model will flag patients who are at risk of a stroke and will give their general practitioners the opporutnity to work with them on health plans to prevent them from occuring. The model will act as a preliminary diagnosic tool available for all doctors, allowing them to better serve their patients. We will also highlgiht the features of the model that contribute the the most to the models predictions
+Hospitals are constantly looking for new ways to detect health risks in their patients before they occur. We have been asked by Mount Sinai's Diagnostic team to create a model that can predict the likelihood of a stroke in their patients with the use of patient data. The model will flag patients who are at risk of a stroke and will give their general practitioners the opportunity to work with them on health plans in hopes of prevention. The model will act as a preliminary diagnostic tool available for all doctors, allowing them to better serve their patients. We will also highlight the features of the model that contribute the most to the models predictions.
 
 ## Data
 For our model we used a dataset with 5,110 observations and 12 features. 
@@ -33,12 +33,10 @@ Below are the 12 features and the data contained in them.
 
 ## Methods
 
-We used multiple classification algorithms to learn from our dataset and classify new obsercations as either stroke patients or not. The final model we agreed upon was a XGBoost model with tuned hyperparameters. 
+We used binary classification algorithms to learn from our dataset and classify new observations as either at risk or not at risk of a stroke. Our best performing model was an XGBoost model with tuned hyperparameters. 
 
 ## Results
-Our model was created to predict potential patients at risk of suffering from a stroke. We chose the metric recall because it is associated with decreasing the amount of false negative values of our model. Our final recall score was 98 percent. This means that our model, when ran on unseen data, predicted true positives correctly 98 percent of the time. Our model fitted our data very well. XGBoost uses the errors to improve itself which is very powerful. Our final model is way better than our baseline model. We are very confident that our model will generalize well on future unseen data.
-
-This model will benefit the business if put to use because it will flag potential stroke victims, potentially saving thier lives due to early detection and early treament. This model is extremely powerful and can be very beneficial to Mount Sinai's Diagnostic Team.
+We chose recall as our important metric to measure because it is associated with decreasing the amount of false negative values of our model - this lessens the chances of our model flagging an at risk patient as not at risk, a scenario that is more costly than flagging a non at risk patient as at risk. Our final recall score was 98%. This means that our model, when ran on unseen data, predicted true positives correctly 98% of the time. This high percentage can be attributed to class imbalance; however, it is still an impressive result. XGBoost works well in this scenario - combining the power of gradient boosting with optimized algorithms, handling complex relationships between variables, handling missing data, and providing strong predictive performance. With a final recall score very similar to our cross val scores, we can be confident that the model will adapt well to new, unseen data, making it valuable to a variety of healthcare institutions.
 
 
 ### Visual 1
@@ -52,11 +50,9 @@ This model will benefit the business if put to use because it will flag potentia
 
 ## Conclusions
 
-In conclusion, we recommend that Mount Sinai takes our model and incorporates it as a tool for their doctors in preliminary diagnostics for their patients. Once doctors idenitfy those patients that are at risk of stroke, they can work to build comprehenive health plans in hopes of preventing strokes. The two attributes of a person we think doctors should focus most on are the age of the patient and their bmi levels. Our models have shown that these two features contribute greatly to the prediction of stroke cases. When focusing on patients, they should look to treat those older patients first, as well as those with high bmi's, possibly working to lower their bmi's as well.
+We recommend that Mount Sinai takes our model and incorporates it as a tool for their doctors in preliminary diagnostics for their patients. Once doctors identify patients that are at risk of stroke, they can work to build comprehensive health plans to combat and lessen the chances of a stroke. The two attributes of a person we think doctors should focus most on are the age of the patient and their bmi levels. Our models have shown that these two features contribute greatly to the prediction of stroke cases. When focusing on patients, they should look to treat those older patients first, as well as those with high bmi's, possibly working to lower their bmi's as well.
 
-One reason our analysis might not fully solve the busines problem is that our dataset is fairly small, so it might not have captured all of the possible cases of potential stroke victim. Another reason our analysis might not fully solve the business problem is because we don't have many features aligned with strokes. If we had more features that were linked to strokes, our model could be improved.
-
-In the future, we would love to further explore health data and create a model that maintains our recall with in more comprehensive unseen data. We also would like to apply similar model techniques to health data to predict other illnesses like heart disease.
+To aid the comprehensiveness of our model, we hope to add more patient data and more health and history features to our model. We also would like to apply similar model techniques to health data to predict other illnesses like heart disease.
 
 ## For More Information
 
